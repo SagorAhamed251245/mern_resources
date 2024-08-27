@@ -1,0 +1,30 @@
+.container {
+    background-color: rgb(150, 209, 209);
+    min-height: 50lvh;
+    display: flex;
+    /* x-axis */
+    justify-content: center;
+    /* y-axis */
+    align-items: center;
+    gap: 20px;
+    /* responsiveness */
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+}
+
+.box {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border: 1px solid red;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    /* flex-grow: 1; */
+
+}
+
+.box5,
+.box2 {
+    flex-grow: 1;
+}

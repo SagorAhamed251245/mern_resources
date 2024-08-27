@@ -1,0 +1,81 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: rgb(12, 227, 116);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+    gap: 20px;
+}
+
+.plan {
+    background-color: #f5f5f5;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.plan-list {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* 
+//media query */
+@media screen and (max-width: 495px) {
+    .pricing-table {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        background-color: red;
+    }
+}

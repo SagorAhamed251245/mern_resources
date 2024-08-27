@@ -1,0 +1,38 @@
+.outer-container {
+    border: 1px solid red;
+    width: 75vw;
+    height: 85vh;
+    position: relative;
+}
+
+body {
+    min-height: 200vh;
+}
+
+
+.inner-container {
+    border: 1px solid green;
+    width: 40vw;
+    height: 40vh;
+    margin: 200px auto;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+}
+
+.absolute {
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: blue;
+    color: white;
+    top: 100px;
+    left: 10px;
+}

@@ -1,0 +1,17 @@
+.box {
+    background-color: aqua;
+    height: 100px;
+    /* width: 200px; */
+}
+
+.inline-box {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: bisque;
+    border: 1px solid green;
+}
+
+.none {
+    display: none;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+            <div class="container">
+                <img class="img-fluid" height="100" width="80" src="/images/logo.png" alt="Logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">All Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Category
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- //carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide container">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <img src="/images/slider/slider-1-1.webp" class="img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/slider/slider-2-2.webp" class="img-fluid" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- brand section -->
+        <section class="brand-section py-5">
+            <h2 class="text-center">Our Brands</h2>
+
+            <div class="d-flex justify-content-center flex-wrap">
+                <div class="brand-item">
+                    <img src="/images/brands/brand-1.png" alt="brand" class="img-fluid">
+                </div>
+                <div class="brand-item">
+                    <img src="/images/brands/brand-2.png" alt="brand" class="img-fluid">
+                </div>
+                <div class="brand-item">
+                    <img src="/images/brands/brand-3.png" alt="brand" class="img-fluid">
+                </div>
+                <div class="brand-item">
+                    <img src="/images/brands/brand-4.png" alt="brand" class="img-fluid">
+                </div>
+                <div class="brand-item">
+                    <img src="/images/brands/brand-5.png" alt="brand" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended sections -->
+        <section class="recommended-section py-5">
+
+            <div class="container">
+                <h2 class="text-center">Recommended For You</h2>
+
+                <div class="row mt-5">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="recommended-item p-4 rounded">
+                            <h4>Short Jacket</h4>
+
+                            <div class="d-flex justify-content-center gap-4 align-items-center py-3 px-2">
+                                <div>
+                                    <img width="250" height="200"
+                                        class="recommended-item-img rounded mx-auto d-block img-fluid"
+                                        src="/images/recommend/jacket.webp" alt="Jacket">
+                                </div>
+
+                                <div>
+                                    <h6>Padded Short Jacket</h6>
+                                    <p>A jacket is a garment for the body, usually extending...</p>
+
+                                    <h2>$31.00</h2>
+
+                                    <button type="button" class="btn btn-info">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="recommended-item p-4 rounded">
+                            <h4>Shirt</h4>
+
+                            <div class="d-flex justify-content-center gap-4 align-items-center py-3 px-2">
+                                <div>
+                                    <img width="250" height="200"
+                                        class="recommended-item-img rounded mx-auto d-block img-fluid"
+                                        src="/images/recommend/shirts.webp" alt="Jacket">
+                                </div>
+
+                                <div>
+                                    <h6>Short-sleeved Shirt</h6>
+                                    <p>Multicolour Cotton Taaga Man Casual Modern Shirt. Lorem ipsum dolor sit amet.</p>
+
+                                    <h2>$48.00</h2>
+
+                                    <button type="button" class="btn btn-info">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <div class="recommended-item p-4 rounded">
+                            <h4>Worn Jeans</h4>
+
+                            <div class="d-flex justify-content-center gap-4 align-items-center py-3 px-2">
+                                <div>
+                                    <img width="250" height="200"
+                                        class="recommended-item-img rounded mx-auto d-block img-fluid"
+                                        src="/images/recommend/pant.webp" alt="Jacket">
+                                </div>
+
+                                <div>
+                                    <h6>Stylish Jeans</h6>
+                                    <p>A jacket is a garment for the body, usually extending...</p>
+
+                                    <h2>$31.00</h2>
+
+                                    <button type="button" class="btn btn-info">Add To Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section py-5">
+            <div class="container">
+                <h2 class="text-center">Top Category</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mt-5">
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/cat-3.webp" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Men</h5>
+                                <p class="card-text">The latest Men fashion collections for Spring/Summer and
+                                    Fall/Winter
+                                    are now available to bought! </p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/cat-2.webp" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Women</h5>
+                                <p class="card-text">The latest Women fashion collections for Spring and Winter
+                                    are now available to bought! </p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/cat-1.webp" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kids</h5>
+                                <p class="card-text">The latest kid fashion collections for Spring/Summer and
+                                    Fall/Winter
+                                    are now available to bought! </p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/cat-4.webp" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Women</h5>
+                                <p class="card-text">The latest Men/Women fashion collections for Summer and
+                                    Fall
+                                    are now available to bought! </p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

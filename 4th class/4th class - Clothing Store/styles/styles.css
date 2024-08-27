@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F8FC;
+}
+
+.custom-navbar {
+    background-color: #414C55 !important;
+}
+
+.nav-link {
+    color: white;
+}
+
+.recommended-item {
+    background-color: white;
+    padding: 1rem;
+}
